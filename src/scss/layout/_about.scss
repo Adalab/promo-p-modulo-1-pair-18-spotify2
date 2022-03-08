@@ -1,0 +1,72 @@
+.about-us__article {
+  padding: 20px 0px;
+  text-align: center;
+  margin-top: 30px;
+  margin: 0 0.65%;
+
+  &-image, &-image-right {
+    width: 205px;
+    border-radius: 20px;
+    border: solid 5px rgba(0, 0, 0, 0.08);
+    justify-content: center;
+  }
+
+  &-team {
+    text-align: center;
+
+    &-name, &-name-right {
+      margin: 15px;
+      font-family: "Open Sans";
+      font-size: 20px;
+      line-height: 2.25;
+      color: var(--black);
+    }
+
+    &-info, &-info-right {
+      font-family: "Open Sans";
+      line-height: 1.88;
+      color: var(--dark-gray);
+      margin: 15px;
+    }
+
+    &-social, &-social-right {
+      color: var(--blue-green);
+      justify-content: center;
+      display: flex;
+      align-items: center;
+
+      & a:visited,
+      a:link {
+        color: var(--blue-green);
+        margin: 0px 10px;
+      }
+    }
+  }
+}
+
+@media all and (min-width: 768px){
+  .about-us__article{
+    display: flex;
+    margin: 6%;
+    &-image-right{
+      order: 1;
+    }
+
+    &-team {
+      text-align: left;
+      &-name-right{
+        text-align: right;
+      }
+      &-info-right{
+        text-align: right;
+      }
+
+      &-social {
+        justify-content: flex-start;
+        &-right{
+          justify-content: end;
+        }
+    }
+  }
+  }
+}
