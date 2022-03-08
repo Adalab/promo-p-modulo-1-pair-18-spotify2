@@ -1,0 +1,73 @@
+// @import 'core/variables';
+// @import 'core/reset';
+// @import 'components/code';
+// @import 'components/links';
+// @import 'layout/page';
+// @import 'layout/header';
+// @import 'layout/footer';
+// @import 'pages/index';
+
+/* :root {
+  --brand-color: white;
+} */
+
+body {
+  font-family: 'Roboto', 'Open Sans';
+  /* color: ; */
+}
+
+.container {
+  padding: 20px 20px;
+}
+.nav {
+  background-color: black;
+  /* color: var(--brand-color); */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* box-sizing: content; */
+}
+
+.img_logo {
+  width: 20%;
+  max-width: 400px;
+}
+
+.nav_header {
+  position: sticky;
+  top: 0;
+  font-size: 20px;
+  color: white;
+}
+.nav_footer {
+  font-size: 5px;
+  color: white;
+}
+.burguer_menu {
+  width: 30px;
+}
+
+.li_menu {
+  display: none;
+  font-size: 15px;
+}
+
+.link_item {
+  padding: 15px;
+}
+
+.banner {
+  background-color: lightskyblue;
+}
+
+/* TABLET DESIGN */
+
+@media all and (min-width: 1000px) {
+  .li_menu {
+    list-style: none;
+    display: flex;
+  }
+  .burguer_menu {
+    display: none;
+  }
+}
